@@ -4,29 +4,34 @@
              x:Class="Calculator.MainPage">
 
     <StackLayout BackgroundColor="Black">
-        <Grid Padding="15,15,15,15" HeightRequest="750">
+        <Grid Padding="15,15,15,15" HeightRequest="650">
             <Label x:Name="Result" TextColor="Black" Text="" Padding="5,5,5,5" FontSize="46" BackgroundColor="Aqua" VerticalTextAlignment="End" HorizontalTextAlignment="End"/>
         </Grid>
-        <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*,*" HeightRequest="750" Padding="15,15,15,15">
-            <Button Clicked="Clicked" ClassId="one" x:Name="one" BackgroundColor="RosyBrown" FontSize="30" Text="1" Grid.Row="0" Grid.Column="0"></Button>
-            <Button Clicked="Clicked" ClassId="two" x:Name="two" BackgroundColor="RosyBrown" FontSize="30" Text="2" Grid.Row="0" Grid.Column="1"></Button>
-            <Button Clicked="Clicked" ClassId="three" x:Name="three" BackgroundColor="RosyBrown" FontSize="30" Text="3" Grid.Row="0" Grid.Column="2"></Button>
-            <Button Clicked="Clicked" ClassId="plus" x:Name="plus" BackgroundColor="MistyRose" FontSize="30" Text="+" Grid.Row="0" Grid.Column="3"></Button>
+        <Grid RowDefinitions="*,*,*,*,*" ColumnDefinitions="*,*,*,*" HeightRequest="850" Padding="15,15,15,15">
+            <Button Clicked="Clicked" ClassId="one" x:Name="one" BackgroundColor="RosyBrown" FontSize="30" Text="1" Grid.Row="1" Grid.Column="0"></Button>
+            <Button Clicked="Clicked" ClassId="two" x:Name="two" BackgroundColor="RosyBrown" FontSize="30" Text="2" Grid.Row="1" Grid.Column="1"></Button>
+            <Button Clicked="Clicked" ClassId="three" x:Name="three" BackgroundColor="RosyBrown" FontSize="30" Text="3" Grid.Row="1" Grid.Column="2"></Button>
+            <Button Clicked="Clicked" ClassId="plus" x:Name="plus" BackgroundColor="MistyRose" FontSize="30" Text="+" Grid.Row="1" Grid.Column="3"></Button>
 
-            <Button Clicked="Clicked" ClassId="four" x:Name="four" BackgroundColor="RosyBrown" FontSize="30" Text="4" Grid.Row="1" Grid.Column="0"></Button>
-            <Button Clicked="Clicked" ClassId="five" x:Name="five" BackgroundColor="RosyBrown" FontSize="30" Text="5" Grid.Row="1" Grid.Column="1"></Button>
-            <Button Clicked="Clicked" ClassId="six" x:Name="six" BackgroundColor="RosyBrown" FontSize="30" Text="6" Grid.Row="1" Grid.Column="2"></Button>
-            <Button Clicked="Clicked" ClassId="minus" x:Name="minus" BackgroundColor="MistyRose" FontSize="30" Text="-" Grid.Row="1" Grid.Column="3"></Button>
+            <Button Clicked="Clicked" ClassId="four" x:Name="four" BackgroundColor="RosyBrown" FontSize="30" Text="4" Grid.Row="2" Grid.Column="0"></Button>
+            <Button Clicked="Clicked" ClassId="five" x:Name="five" BackgroundColor="RosyBrown" FontSize="30" Text="5" Grid.Row="2" Grid.Column="1"></Button>
+            <Button Clicked="Clicked" ClassId="six" x:Name="six" BackgroundColor="RosyBrown" FontSize="30" Text="6" Grid.Row="2" Grid.Column="2"></Button>
+            <Button Clicked="Clicked" ClassId="minus" x:Name="minus" BackgroundColor="MistyRose" FontSize="30" Text="-" Grid.Row="2" Grid.Column="3"></Button>
 
-            <Button Clicked="Clicked" ClassId="seven" x:Name="seven" BackgroundColor="RosyBrown" FontSize="30" Text="7" Grid.Row="2" Grid.Column="0"></Button>
-            <Button Clicked="Clicked" ClassId="eight" x:Name="eight" BackgroundColor="RosyBrown" FontSize="30" Text="8" Grid.Row="2" Grid.Column="1"></Button>
-            <Button Clicked="Clicked" ClassId="nine" x:Name="nine" BackgroundColor="RosyBrown" FontSize="30" Text="9" Grid.Row="2" Grid.Column="2"></Button>
-            <Button Clicked="Clicked" ClassId="divide" x:Name="divide" BackgroundColor="MistyRose" FontSize="30" Text="/" Grid.Row="2" Grid.Column="3"></Button>
+            <Button Clicked="Clicked" ClassId="seven" x:Name="seven" BackgroundColor="RosyBrown" FontSize="30" Text="7" Grid.Row="3" Grid.Column="0"></Button>
+            <Button Clicked="Clicked" ClassId="eight" x:Name="eight" BackgroundColor="RosyBrown" FontSize="30" Text="8" Grid.Row="3" Grid.Column="1"></Button>
+            <Button Clicked="Clicked" ClassId="nine" x:Name="nine" BackgroundColor="RosyBrown" FontSize="30" Text="9" Grid.Row="3" Grid.Column="2"></Button>
+            <Button Clicked="Clicked" ClassId="divide" x:Name="divide" BackgroundColor="MistyRose" FontSize="30" Text="/" Grid.Row="3" Grid.Column="3"></Button>
 
-            <Button Clicked="Clicked" ClassId="clean" x:Name="clean" BackgroundColor="Snow" FontSize="18" Text="Clean" Grid.Row="3" Grid.Column="0"></Button>
-            <Button Clicked="Clicked" ClassId="zero" x:Name="zero" BackgroundColor="RosyBrown" FontSize="30" Text="0" Grid.Row="3" Grid.Column="1"></Button>
-            <Button Clicked="Clicked" ClassId="equal" x:Name="equal" BackgroundColor="Snow" FontSize="30" Text="=" Grid.Row="3" Grid.Column="2"></Button>
-            <Button Clicked="Clicked" ClassId="multiply" x:Name="multiply" BackgroundColor="MistyRose" FontSize="30" Text="*" Grid.Row="3" Grid.Column="3"></Button>
+            <Button Clicked="Clicked" ClassId="clean" x:Name="clean" BackgroundColor="Snow" FontSize="18" Text="Clean" Grid.Row="4" Grid.Column="0"></Button>
+            <Button Clicked="Clicked" ClassId="zero" x:Name="zero" BackgroundColor="RosyBrown" FontSize="30" Text="0" Grid.Row="4" Grid.Column="1"></Button>
+            <Button Clicked="Clicked" ClassId="equal" x:Name="equal" BackgroundColor="Snow" FontSize="30" Text="=" Grid.Row="4" Grid.Column="2"></Button>
+            <Button Clicked="Clicked" ClassId="multiply" x:Name="multiply" BackgroundColor="MistyRose" FontSize="30" Text="*" Grid.Row="4" Grid.Column="3"></Button>
+
+            <Button BackgroundColor="Snow" FontSize="30" Text="" WidthRequest="200" Grid.Row="0" Grid.Column="0"></Button>
+            <Button BackgroundColor="Snow" FontSize="30" Text="" WidthRequest="200" Grid.Row="0" Grid.Column="1"></Button>
+            <Button BackgroundColor="Snow" FontSize="30" Text="" WidthRequest="200" Grid.Row="0" Grid.Column="2"></Button>
+            <Button BackgroundColor="MistyRose" FontSize="30" Text="^" Grid.Row="0" Grid.Column="3" Clicked="Clicked" ClassId="pow" ></Button>        
         </Grid>
     </StackLayout>
 

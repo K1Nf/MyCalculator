@@ -27,7 +27,7 @@ namespace Calculator
             {
                 // результат есть, проверяем, что ввел пользователь
 
-                if (!"plusminusdividemultiplyequal".Contains(classId))
+                if (!"plusminusdividemultiplypowequal".Contains(classId))
                 //  Работает хорошо
                 {
                     // ввел число, значит пользователь
@@ -133,6 +133,11 @@ namespace Calculator
                     action = "*";
                     symbols.Add("*");
                     break;
+                case "pow":
+                    Result.Text += " ^ ";
+                    action = "^";
+                    symbols.Add("^");
+                    break;
                 case "equal":
                     symbols.Add(" = ");
                     result = Count();
@@ -171,23 +176,6 @@ namespace Calculator
 
             }
 
-
-
-
-            //                else
-            //                { 
-            //                    try
-            //                    {
-            //                        digitsOnly.Add(Convert.ToInt32(perem));
-            //                    }
-            //                    catch (Exception)
-            //                    {
-            //                        Result.Text = "";
-            //                        return "";
-            //                    }
-            //                    
-            //                }
-
             switch (action)
             {
                 case "+":
@@ -200,6 +188,8 @@ namespace Calculator
                     return (digitsOnly[0] / digitsOnly[1]).ToString();
                 case "*":
                     return (digitsOnly[0] * digitsOnly[1]).ToString();
+                case "^":
+                    return Math.Pow(digitsOnly[0], digitsOnly[1]).ToString();
                 default:
                     return "";
             }
