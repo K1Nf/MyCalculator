@@ -37,7 +37,7 @@ namespace Calculator
                     // пытается ввести второе чило
                     // проверим это:
 
-                    if (!(symbols.Contains("/") || symbols.Contains("*") || symbols.Contains("+") || symbols.Contains("-"))) // ???
+                    if (!(symbols.Contains("/") || symbols.Contains("*") || symbols.Contains("^") || symbols.Contains("+") || symbols.Contains("-"))) // ???
                     //  Работает хорошо
                     {
 
